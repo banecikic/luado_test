@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Job title:</strong>
+  <%= @project_phase.job_title %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @project_phase.price %>
+</p>
+
+<p>
+  <strong>Timeframe:</strong>
+  <%= @project_phase.timeframe %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @project_phase.project.project_title %>
+</p>
+
+<%= link_to 'Edit', edit_project_project_phase_path(@project_phase) %> |
+<%= link_to 'Back', project_project_phases_path %> |
+<%= link_to @project_phase.job_title, project_project_phase_path(@project, @project_phase) %>
